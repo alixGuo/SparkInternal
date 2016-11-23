@@ -77,14 +77,16 @@ RDD的persist()最终调用的是SparkContext的`persistRDD()`：
 ```
 在内存中存储的是RDD对象的ConcurrentMap。
 
-- **测试数据：**
-![Alt text](https://github.com/alixGuo/Resources/blob/master/2016112301.png)
+- **测试数据：**  
+
+![Alt text](https://github.com/alixGuo/Resources/blob/master/2016112301.png)  
+
 从测试结果看到，同一份数据，分别使用RDD.cache()和DataSet.cache()的内存占用情况。这就是为啥通过RDD.cache()很容易就OOM了。	
 
 
-#### **2、Parquet向量读优化**
-**参考**：https://issues.apache.org/jira/browse/PARQUET-131
-**解读**：实现Parquet一次多行读/写方式
+#### **2、Parquet向量读优化**  
+**参考**：https://issues.apache.org/jira/browse/PARQUET-131  
+**解读**：实现Parquet一次多行读/写方式  
 
 
 
