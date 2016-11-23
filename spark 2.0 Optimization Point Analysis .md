@@ -1,4 +1,4 @@
-## spark 2.0 Optimization Point Test
+## Spark 2.0 Optimization Point Test
 ------------------
 #### **1、cache内存列存储优化**
 **解读**：在Spark2.0中，使用DataSet.cache()方式缓存数据比使用RDD.cache()方式节省内存。
@@ -78,7 +78,7 @@ RDD的persist()最终调用的是SparkContext的`persistRDD()`：
 在内存中存储的是RDD对象的ConcurrentMap。
 
 - **测试数据：**
-![Alt text](./1479870628285.png)
+![Alt text](https://github.com/alixGuo/Resources/blob/master/2016112301.png)
 从测试结果看到，同一份数据，分别使用RDD.cache()和DataSet.cache()的内存占用情况。这就是为啥通过RDD.cache()很容易就OOM了。	
 
 
