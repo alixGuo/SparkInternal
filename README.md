@@ -1,4 +1,8 @@
 ## SparkInternal
+
+### [SparkSQL核心概念分析及流程梳理](https://github.com/alixGuo/SparkInternal/blob/master/SparkSQL%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%B5%81%E7%A8%8B%E6%A2%B3%E7%90%86.pdf)  
+- 初步分析了一下SparkSQL的核心概念和流程，为Q2统一SQL引擎开发打一下基础  
+
 ### [Executor资源是怎么申请来的](https://github.com/alixGuo/SparkInternal/blob/master/Executor%E8%B5%84%E6%BA%90%E6%98%AF%E6%80%8E%E4%B9%88%E7%94%B3%E8%AF%B7%E6%9D%A5%E7%9A%84.md)
 - 普通资源申请分析
 - 动态资源分配（DynamicResourceAllocation）  
